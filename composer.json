@@ -1,0 +1,54 @@
+{
+    "name": "duroom/suspend",
+    "description": "Suspend users so they can't post.",
+    "type": "duroom-extension",
+    "keywords": [
+        "moderation"
+    ],
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/DuRoom/core/issues",
+        "source": "https://github.com/DuRoom/suspend",
+        "forum": "https://discuss-duroom.js.org"
+    },
+    "homepage": "https://duroom.js.org",
+    "require": {
+        "duroom/core": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "DuRoom\\Suspend\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        },
+        "duroom-extension": {
+            "title": "Suspend",
+            "category": "feature",
+            "icon": {
+                "name": "fas fa-ban",
+                "backgroundColor": "#ddd",
+                "color": "#666"
+            }
+        },
+        "duroom-cli": {
+            "modules": {
+                "admin": true,
+                "forum": true,
+                "js": true,
+                "jsCommon": false,
+                "css": true,
+                "gitConf": true,
+                "githubActions": true,
+                "prettier": true,
+                "typescript": false,
+                "bundlewatch": false,
+                "backendTesting": false,
+                "editorConfig": true,
+                "styleci": true
+            }
+        }
+    }
+}
